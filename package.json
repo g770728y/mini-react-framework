@@ -1,7 +1,17 @@
 {
   "name": "mini-react-framework",
+  "description": "适合于中小项目的react框架, 开发体验极佳, 类似mobx/vue的局部响应式刷新, 性能非常好, 特别适合5人以下团队的小型开发",
+  "author": "g770728y",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "keywords": [
+    "react",
+    "typescript",
+    "hooks",
+    "react-atom",
+    "immer",
+    "jsx-control-statements"
+  ],
   "dependencies": {
     "@types/jest": "24.0.9",
     "@types/node": "11.10.4",
