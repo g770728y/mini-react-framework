@@ -8,6 +8,7 @@ class App extends Component {
   render() {
     console.log('todo: reach react 整合');
     console.log('todo: 编码约定');
+    console.log('todo: 首页修改, 变成一个帮助页面');
     return (
       <GlobalContext.Provider value={new GlobalStore()}>
         <div className="App">
@@ -22,3 +23,4 @@ class App extends Component {
 }
 
 export default App;
+
