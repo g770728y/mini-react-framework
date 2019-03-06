@@ -1,26 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { GlobalContext, GlobalStore } from './store';
 
 class App extends Component {
+  // TODO:
   render() {
+    console.log('todo: reach react 整合');
+    console.log('todo: 编码约定');
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <GlobalContext.Provider value={new GlobalStore()}>
+        <div className="App">
+          <div>
+            <header>几种条件模板写法示例</header>
+            <header>如何写action/hooks</header>
+          </div>
+        </div>
+      </GlobalContext.Provider>
     );
   }
 }
