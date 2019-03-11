@@ -42,6 +42,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/reach__router": "^1.2.3",
     "babel-plugin-jsx-control-statements": "^4.0.0"
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { AppContext, AppStore } from './store';
+import { Router } from '@reach/router';
 
 class App extends Component {
   // TODO:
@@ -9,10 +9,10 @@ class App extends Component {
     return (
       <AppContext.Provider value={new AppStore()}>
         <div className="App">
-          <div>
-            <header>几种条件模板写法示例</header>
-            <header>如何写action/hooks</header>
-          </div>
+          <Router>
+            <Home path="/" />
+            <Desks path="/desks" />
+          </Router>
         </div>
       </AppContext.Provider>
     );
